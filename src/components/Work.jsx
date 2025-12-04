@@ -1,13 +1,13 @@
 export const Work = () => {
   return (
     <div className="w-full h-[1840px] flex justify-center">
-      <div className="w-7xl h-[1656px] flex flex-col gap-[48px] pt-[96px] pl-[80px] pr-[80px] ">
+      <div className="w-7xl h-[1656px] flex flex-col gap-12 pt-24 pl-20 pr-20 ">
         <div className="w-full h-[72px] flex flex-col justify-center items-center gap-4 pl-16 pr-16">
           <button className="w-[75px] h-7 bg-[#374151] rounded-xl">Work</button>
           <div>Some of the noteworthy projects I have built:</div>
         </div>
         <div className="w-[1132px] h-[480px] rounded-xl bg-[#1f2937] flex flex-row ">
-          <div className="w-[566px] h-[480px] bg-[#374151] pl-8 pt-8">
+          <div className="w-[566px] h-[480px] rounded-tl-xl rounded-bl-xl bg-[#374151] pl-8 pt-8">
             <img className="w-[480px] h-96 rounded-xl" src="ub.png" alt="" />
           </div>
           <div className="w-[566px] h-[480px] flex  flex-col gap-6  p-8">
@@ -100,7 +100,7 @@ export const Work = () => {
               <img src="icon Button.png" alt="" />
             </div>
           </div>
-          <div className="w-[566px] h-[480px] bg-[#374151] pl-8 pt-8">
+          <div className="w-[566px] h-[480px] rounded-tr-xl rounded-br-xl bg-[#374151] pl-8 pt-8">
             <img
               className="w-[480px] h-96 rounded-xl"
               src="mentorhub.png"
@@ -109,7 +109,7 @@ export const Work = () => {
           </div>
         </div>
         <div className="w-[1132px] h-[480px] rounded-xl bg-[#1f2937] flex flex-row ">
-          <div className="w-[566px] h-[480px] bg-[#374151] pl-8 pt-8">
+          <div className="w-[566px] h-[480px] rounded-tl-xl rounded-bl-xl bg-[#374151] pl-8 pt-8">
             <img className="w-[480px] h-96 rounded-xl" src="itoim.jpg" alt="" />
           </div>
           <div className="w-[566px] h-[480px] flex  flex-col gap-6  p-8">
