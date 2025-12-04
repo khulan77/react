@@ -1,168 +1,150 @@
 export const Work = () => {
   return (
-    <div className="w-full h-[1840px] flex justify-center max-sm:h-[2616px]">
-      <div className="w-7xl h-[1656px] flex flex-col gap-12 pt-24 pl-20 pr-20 max-sm:[2488px]">
-        <div className="w-full h-[72px] flex flex-col justify-center items-center gap-4 pl-16 pr-16 max-sm:w-[343px] max-sm:h-[100px]">
-          <button className="w-[75px] h-7 bg-[#374151] rounded-xl">Work</button>
-          <div>Some of the noteworthy projects I have built:</div>
+    <div className="w-full flex justify-center bg-[#111827]">
+      <div className="max-w-7xl w-full flex flex-col gap-16 pt-24 px-20 
+        max-sm:px-4 max-sm:pt-16">
+
+        {/* TOP TEXT */}
+        <div className="w-full flex flex-col justify-center items-center gap-4 text-center">
+          <button className="w-[75px] h-7 bg-[#374151] rounded-xl text-white">
+            Work
+          </button>
+          <div className="text-white">
+            Some of the noteworthy projects I have built:
+          </div>
         </div>
-        <div className="w-[1132px] h-[480px] rounded-xl bg-[#1f2937] flex flex-row max-sm:flex max-sm:flex-col max-sm:h-[772px]">
-          <div className="w-[566px] h-[480px] rounded-tl-xl rounded-bl-xl bg-[#374151] pl-8 pt-8 max-sm:h-64 max-sm:w-[343px]  ">
+
+        {/* CARD 1 — UBCAB */}
+        <div className="w-full bg-[#1f2937] rounded-xl flex 
+          max-sm:flex-col">
+
+          {/* LEFT IMAGE */}
+          <div className="w-1/2 bg-[#374151] rounded-l-xl p-8 
+            max-sm:w-full max-sm:rounded-t-xl max-sm:rounded-b-none max-sm:flex max-sm:justify-center">
             <img
-              className="w-[480px] h-96 rounded-xl max-sm:h-48 max-sm:w-[279px]"
+              className="w-full max-w-[480px] rounded-xl 
+                max-sm:max-w-[279px] max-sm:h-48 object-cover"
               src="ub.png"
               alt=""
             />
           </div>
-          <div className="w-[566px] h-[480px] flex  flex-col gap-6  p-8 max-sm:h-[516px] max-sm:w-[343px] max-sm:flex max-sm:justify-center max-sm:items-center">
-            <div className=" text-xl text-white font-bold">UBCab</div>
-            <div>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-              nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis
-              in faucibus orci luctus et ultrices posuere cubilia curae.
-            </div>
-            <div className="w-[480px] h-[100px] flex gap-2 flex-wrap ">
-              <button className="w-[79px] h-7 bg-[#374151] rounded-xl">
-                React
-              </button>
-              <button className="w-[87px] h-7 bg-[#374151] rounded-xl">
-                Next.js
-              </button>
-              <button className="w-28 h-7 bg-[#374151] rounded-xl">
-                Typscript
-              </button>
-              <button className="w-[87px] h-7 bg-[#374151] rounded-xl">
-                Nest.js
-              </button>
-              <button className="w-[120px] h-7 bg-[#374151] rounded-xl">
-                PostgreSQL
-              </button>
-              <button className="w-[119px] h-7 bg-[#374151] rounded-xl">
-                Tailwindcss
-              </button>
-              <button className="w-[81px] h-7 bg-[#374151] rounded-xl">
-                Figma
-              </button>
-              <button className="w-24 h-7 bg-[#374151] rounded-xl">
-                Cypress
-              </button>
 
-              <button className="w-[110px] h-7 bg-[#374151] rounded-xl">
-                Storybook
-              </button>
-              <button className="w-[60px] h-7 bg-[#374151] rounded-xl">
-                Git
-              </button>
+          {/* RIGHT CONTENT */}
+          <div className="w-1/2 flex flex-col gap-6 p-8 text-white 
+            max-sm:w-full max-sm:items-center max-sm:text-center">
+
+            <div className="text-xl font-bold">UBCab</div>
+
+            <div className="text-gray-300">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+              nec urna ac tellus volutpat viverra.
             </div>
-            <div>
-              <img src="icon Button.png" alt="" />
+
+            {/* Tags */}
+            <div className="flex flex-wrap gap-2 max-w-[480px]">
+              {[
+                "React", "Next.js", "Typescript", "Nest.js",
+                "PostgreSQL", "Tailwindcss", "Figma",
+                "Cypress", "Storybook", "Git"
+              ].map((t) => (
+                <button
+                  key={t}
+                  className="px-3 h-7 bg-[#374151] rounded-xl text-sm"
+                >
+                  {t}
+                </button>
+              ))}
             </div>
+
+            <img src="icon Button.png" alt="" />
           </div>
         </div>
-        <div className="w-[1132px] h-[480px] rounded-xl bg-[#1f2937] flex flex-row max-sm:flex max-sm:flex-col max-sm:h-[772px]">
-          <div className="w-[566px] h-[480px] flex  flex-col gap-6  p-8 max-sm:h-[516px] max-sm:w-[343px] max-sm:flex max-sm:justify-center max-sm:items-center">
-            <div className=" text-xl text-white font-bold">Mentorhub</div>
-            <div>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-              nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis
-              in faucibus orci luctus et ultrices posuere cubilia curae.
-            </div>
-            <div className="w-[480px] h-[100px] flex gap-2 flex-wrap">
-              <button className="w-[79px] h-7 bg-[#374151] rounded-xl">
-                React
-              </button>
-              <button className="w-[87px] h-7 bg-[#374151] rounded-xl">
-                Next.js
-              </button>
-              <button className="w-28 h-7 bg-[#374151] rounded-xl">
-                Typscript
-              </button>
-              <button className="w-[87px] h-7 bg-[#374151] rounded-xl">
-                Nest.js
-              </button>
-              <button className="w-[120px] h-7 bg-[#374151] rounded-xl">
-                PostgreSQL
-              </button>
-              <button className="w-[119px] h-7 bg-[#374151] rounded-xl">
-                Tailwindcss
-              </button>
-              <button className="w-[81px] h-7 bg-[#374151] rounded-xl">
-                Figma
-              </button>
-              <button className="w-24 h-7 bg-[#374151] rounded-xl">
-                Cypress
-              </button>
 
-              <button className="w-[110px] h-7 bg-[#374151] rounded-xl">
-                Storybook
-              </button>
-              <button className="w-[60px] h-7 bg-[#374151] rounded-xl">
-                Git
-              </button>
+        {/* CARD 2 — Mentorhub */}
+        <div className="w-full bg-[#1f2937] rounded-xl flex 
+          max-sm:flex-col">
+
+          {/* LEFT CONTENT */}
+          <div className="w-1/2 flex flex-col gap-6 p-8 text-white 
+            max-sm:w-full max-sm:items-center max-sm:text-center">
+
+            <div className="text-xl font-bold">Mentorhub</div>
+
+            <div className="text-gray-300">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+              nec urna ac tellus volutpat viverra.
             </div>
-            <div>
-              <img src="icon Button.png" alt="" />
+
+            <div className="flex flex-wrap gap-2 max-w-[480px]">
+              {[
+                "React", "Next.js", "Typescript", "Nest.js",
+                "PostgreSQL", "Tailwindcss", "Figma",
+                "Cypress", "Storybook", "Git"
+              ].map((t) => (
+                <button
+                  key={t}
+                  className="px-3 h-7 bg-[#374151] rounded-xl text-sm"
+                >
+                  {t}
+                </button>
+              ))}
             </div>
+
+            <img src="icon Button.png" alt="" />
           </div>
-          <div className="w-[566px] h-[480px] rounded-tr-xl rounded-br-xl bg-[#374151] pl-8 pt-8">
+
+          {/* RIGHT IMAGE */}
+          <div className="w-1/2 bg-[#374151] rounded-r-xl p-8 
+            max-sm:w-full max-sm:rounded-b-xl max-sm:rounded-t-none max-sm:flex max-sm:justify-center">
             <img
-              className="w-[480px] h-96 rounded-xl max-sm:h-48 max-sm:w-[279px]"
+              className="w-full max-w-[480px] rounded-xl 
+                max-sm:max-w-[279px] max-sm:h-48 object-cover"
               src="mentorhub.png"
               alt=""
             />
           </div>
         </div>
-        <div className="w-[1132px] h-[480px] rounded-xl bg-[#1f2937] flex flex-row max-sm:flex max-sm:flex-col max-sm:h-[772px]">
-          <div className="w-[566px] h-[480px] rounded-tl-xl rounded-bl-xl bg-[#374151] pl-8 pt-8 max-sm:h-[516px] max-sm:w-[343px] max-sm:flex max-sm:justify-center max-sm:items-center">
+
+        {/* CARD 3 — iToim */}
+        <div className="w-full bg-[#1f2937] rounded-xl flex 
+          max-sm:flex-col">
+
+          <div className="w-1/2 bg-[#374151] rounded-l-xl p-8 
+            max-sm:w-full max-sm:rounded-t-xl max-sm:rounded-b-none max-sm:flex max-sm:justify-center">
             <img
-              className="w-[480px] h-96 rounded-xl max-sm:h-48 max-sm:w-[279px]"
+              className="w-full max-w-[480px] rounded-xl 
+                max-sm:max-w-[279px] max-sm:h-48 object-cover"
               src="itoim.jpg"
               alt=""
             />
           </div>
-          <div className="w-[566px] h-[480px] flex  flex-col gap-6  p-8">
-            <div className=" text-xl text-white font-bold">iToim</div>
-            <div>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-              nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis
-              in faucibus orci luctus et ultrices posuere cubilia curae.
-            </div>
-            <div className="w-[480px] h-[100px] flex gap-2 flex-wrap">
-              <button className="w-[79px] h-7 bg-[#374151] rounded-xl">
-                React
-              </button>
-              <button className="w-[87px] h-7 bg-[#374151] rounded-xl">
-                Next.js
-              </button>
-              <button className="w-28 h-7 bg-[#374151] rounded-xl">
-                Typscript
-              </button>
-              <button className="w-[87px] h-7 bg-[#374151] rounded-xl">
-                Nest.js
-              </button>
-              <button className="w-[120px] h-7 bg-[#374151] rounded-xl">
-                PostgreSQL
-              </button>
-              <button className="w-[119px] h-7 bg-[#374151] rounded-xl">
-                Tailwindcss
-              </button>
-              <button className="w-[81px] h-7 bg-[#374151] rounded-xl">
-                Figma
-              </button>
-              <button className="w-24 h-7 bg-[#374151] rounded-xl">
-                Cypress
-              </button>
 
-              <button className="w-[110px] h-7 bg-[#374151] rounded-xl">
-                Storybook
-              </button>
-              <button className="w-[60px] h-7 bg-[#374151] rounded-xl">
-                Git
-              </button>
+          <div className="w-1/2 flex flex-col gap-6 p-8 text-white 
+            max-sm:w-full max-sm:items-center max-sm:text-center">
+
+            <div className="text-xl font-bold">iToim</div>
+
+            <div className="text-gray-300">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+              nec urna ac tellus volutpat viverra.
             </div>
-            <div>
-              <img src="icon Button.png" alt="" />
+
+            <div className="flex flex-wrap gap-2 max-w-[480px]">
+              {[
+                "React", "Next.js", "Typescript", "Nest.js",
+                "PostgreSQL", "Tailwindcss", "Figma",
+                "Cypress", "Storybook", "Git"
+              ].map((t) => (
+                <button
+                  key={t}
+                  className="px-3 h-7 bg-[#374151] rounded-xl text-sm"
+                >
+                  {t}
+                </button>
+              ))}
             </div>
+
+            <img src="icon Button.png" alt="" />
           </div>
         </div>
       </div>

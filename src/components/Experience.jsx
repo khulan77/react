@@ -1,79 +1,82 @@
 export const Experience = () => {
   return (
-    <div className="w-full h-[1140px] bg-[#111827]  flex flex-col items-center pr-25 pl-24 pt-24 gap-12">
-      <div className="w-full h-[72px] flex flex-col items-center justify-center  gap-4">
-        <button className="bg-[#374151] w-[105px] h-7 rounded-xl">
+    <div className="w-full bg-[#111827] flex flex-col items-center px-6 pt-24 gap-12
+      max-sm:px-4 max-sm:pt-16">
+
+      {/* TOP TEXT */}
+      <div className="w-full flex flex-col items-center gap-4 text-center">
+        <button className="bg-[#374151] w-[105px] h-7 rounded-xl text-white">
           Experience
         </button>
-        <div className="w-full h-7 flex justify-center">
+        <div className="text-white">
           Here is a quick summary of my most recent experiences:
         </div>
       </div>
-      <div className="w-[832px] h-72 bg-[#1F2937] flex rounded-xl justify-center items-center p-8 ;">
-        <div className="w-[832px] h-56 flex justify-center ">
-          <div className="h-56 w-[250px]">
-            <img src="logo-upwork.png" alt="" />
+
+      {/* CARD 1 */}
+      <div className="w-[832px] bg-[#1F2937] rounded-xl p-8 flex justify-between 
+        items-center gap-6
+        max-sm:flex-col max-sm:w-full max-sm:text-center max-sm:p-4">
+
+        <img src="logo-upwork.png" className="w-[120px] max-sm:w-[80px]" />
+
+        <div className="flex flex-col gap-4 text-white max-sm:items-center">
+          <div className="text-2xl font-semibold">Sr. Frontend Developer</div>
+          <div className="flex flex-col gap-1 text-gray-300 text-sm max-sm:text-center">
+            <div>• Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            <div>• Ut pretium arcu et massa semper.</div>
+            <div>• Sed quis justo ac magna.</div>
+            <div>• Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
           </div>
-          <div className="w-[354px] h-[254px] flex flex-col gap-4">
-            <div className="text-white text-2xl flex  font-Semi bold">
-              Sr. Frontend Developer
-            </div>
-            <div className="flex flex-col gap-1">
-              <div>
-                • Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </div>
-              <div>
-                • Ut pretium arcu et massa semper, id fringilla leo semper.
-              </div>
-              <div>• Sed quis justo ac magna.</div>
-              <div>
-                • Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </div>
-            </div>
-          </div>
-          <div>Nov 2021 - Present</div>
+        </div>
+
+        <div className="text-gray-400 text-sm max-sm:mt-2">
+          Nov 2021 - Present
         </div>
       </div>
-      <div className="w-[832px] h-72 bg-[#1F2937] flex rounded-xl justify-center items-center p-8 ;">
-        <div className="w-[832px] h-56 flex justify-center ">
-          <div className="h-56 w-[250px]">
-            <img src="logo-upwork.png" alt="" />
+
+      {/* CARD 2 */}
+      <div className="w-[832px] bg-[#1F2937] rounded-xl p-8 flex justify-between 
+        items-center gap-6
+        max-sm:flex-col max-sm:w-full max-sm:text-center max-sm:p-4">
+
+        <img src="logo-upwork.png" className="w-[120px] max-sm:w-[80px]" />
+
+        <div className="flex flex-col gap-4 text-white max-sm:items-center">
+          <div className="text-2xl font-semibold">Team Lead</div>
+          <div className="flex flex-col gap-1 text-gray-300 text-sm max-sm:text-center">
+            <div>• Sed quis justo ac magna.</div>
+            <div>• Lorem ipsum dolor sit amet.</div>
+            <div>• Sed quis justo ac magna.</div>
+            <div>• Lorem ipsum dolor sit amet.</div>
           </div>
-          <div className="w-[354px] h-[254px] flex flex-col gap-4">
-            <div className="text-white text-2xl flex  font-Semi bold">
-              Team Lead
-            </div>
-            <div className="flex flex-col gap-1">
-              <div>• Sed quis justo ac magna.</div>
-              <div>
-                • Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </div>
-              <div>• Sed quis justo ac magna.</div>
-              <div>
-                • Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </div>
-            </div>
-          </div>
-          <div>Jul 2017 - Oct 2021</div>
+        </div>
+
+        <div className="text-gray-400 text-sm max-sm:mt-2">
+          Jul 2017 - Oct 2021
         </div>
       </div>
-      <div className="w-[832px] h-[188px] bg-[#1F2937] flex rounded-xl justify-center items-center p-[32px];">
-        <div className="w-[832px] h-[116px] flex justify-center ">
-          <div className="w-56 h-116px]">
-            <img src="logo-upwork.png" alt="" />
+
+      {/* CARD 3 */}
+      <div className="w-[832px] bg-[#1F2937] rounded-xl p-8 flex justify-between 
+        items-center gap-6
+        max-sm:flex-col max-sm:w-full max-sm:text-center max-sm:p-4">
+
+        <img src="logo-upwork.png" className="w-[120px] max-sm:w-[80px]" />
+
+        <div className="flex flex-col gap-4 text-white max-sm:items-center max-sm:text-center">
+          <div className="text-2xl font-semibold">Full Stack Developer</div>
+          <div className="text-gray-300 text-sm">
+            • Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit.
           </div>
-          <div className="w-[384px] h-[116px] ">
-            <div className="text-white text-2xl flex  font-Semi bold">
-              Full Stack Developer
-            </div>
-            <div>
-              • Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit.
-            </div>
-          </div>
-          <div>Dec 2015 - May 2017</div>
+        </div>
+
+        <div className="text-gray-400 text-sm max-sm:mt-2">
+          Dec 2015 - May 2017
         </div>
       </div>
+
     </div>
   );
 };
