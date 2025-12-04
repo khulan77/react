@@ -1,15 +1,15 @@
 export const About = () => {
   return (
-    <div className="bg-[#111827] h-[826px] w-full flex  justify-center items-center flex-col gap-12  pr-25 pl-24">
-      <div className="w-7xl h-[634px] flex flex-col justify-center items-center gap-12 pl-8 pr-8">
+    <div className="bg-[#111827] h-[826px] w-full flex  justify-center items-center flex-col gap-12  pr-25 pl-24 max-sm:h-[1434px] ">
+      <div className="w-7xl h-[634px] flex flex-col justify-center items-center gap-12 pl-8 pr-8 max-sm:flex max-sm:flex-col">
         <button className="bg-[#374151] w-[105px] h-7 rounded-xl">
           About me
         </button>
-        <div className="flex flex-row w-full h-[588px] justify-between ">
-          <div className="w-[584px] h-[558px]">
+        <div className="flex flex-row w-full h-[588px] justify-between max-sm:flex max-sm:flex-col">
+          <div className="w-[280px] h-[300px] max-sm:w-[280px] max-sm:h-[300px]">
             <img src="tom.png" alt="" />
           </div>
-          <div className="w-[584px] h-[558px] gap-6 flex flex-col">
+          <div className="gap-6 flex flex-col">
             <div className="text-white text-3xl flex  font-Semi bold ">
               Curious about me? Here you have it:
             </div>

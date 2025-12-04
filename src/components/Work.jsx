@@ -1,23 +1,27 @@
 export const Work = () => {
   return (
-    <div className="w-full h-[1840px] flex justify-center">
-      <div className="w-7xl h-[1656px] flex flex-col gap-12 pt-24 pl-20 pr-20 ">
-        <div className="w-full h-[72px] flex flex-col justify-center items-center gap-4 pl-16 pr-16">
+    <div className="w-full h-[1840px] flex justify-center max-sm:h-[2616px]">
+      <div className="w-7xl h-[1656px] flex flex-col gap-12 pt-24 pl-20 pr-20 max-sm:[2488px]">
+        <div className="w-full h-[72px] flex flex-col justify-center items-center gap-4 pl-16 pr-16 max-sm:w-[343px] max-sm:h-[100px]">
           <button className="w-[75px] h-7 bg-[#374151] rounded-xl">Work</button>
           <div>Some of the noteworthy projects I have built:</div>
         </div>
-        <div className="w-[1132px] h-[480px] rounded-xl bg-[#1f2937] flex flex-row ">
-          <div className="w-[566px] h-[480px] rounded-tl-xl rounded-bl-xl bg-[#374151] pl-8 pt-8">
-            <img className="w-[480px] h-96 rounded-xl" src="ub.png" alt="" />
+        <div className="w-[1132px] h-[480px] rounded-xl bg-[#1f2937] flex flex-row max-sm:flex max-sm:flex-col max-sm:h-[772px]">
+          <div className="w-[566px] h-[480px] rounded-tl-xl rounded-bl-xl bg-[#374151] pl-8 pt-8 max-sm:h-64 max-sm:w-[343px]  ">
+            <img
+              className="w-[480px] h-96 rounded-xl max-sm:h-48 max-sm:w-[279px]"
+              src="ub.png"
+              alt=""
+            />
           </div>
-          <div className="w-[566px] h-[480px] flex  flex-col gap-6  p-8">
+          <div className="w-[566px] h-[480px] flex  flex-col gap-6  p-8 max-sm:h-[516px] max-sm:w-[343px] max-sm:flex max-sm:justify-center max-sm:items-center">
             <div className=" text-xl text-white font-bold">UBCab</div>
             <div>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
               nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis
               in faucibus orci luctus et ultrices posuere cubilia curae.
             </div>
-            <div className="w-[480px] h-[100px] flex gap-2 flex-wrap">
+            <div className="w-[480px] h-[100px] flex gap-2 flex-wrap ">
               <button className="w-[79px] h-7 bg-[#374151] rounded-xl">
                 React
               </button>
@@ -55,8 +59,8 @@ export const Work = () => {
             </div>
           </div>
         </div>
-        <div className="w-[1132px] h-[480px] rounded-xl bg-[#1f2937] flex flex-row ">
-          <div className="w-[566px] h-[480px] flex  flex-col gap-6  p-8">
+        <div className="w-[1132px] h-[480px] rounded-xl bg-[#1f2937] flex flex-row max-sm:flex max-sm:flex-col max-sm:h-[772px]">
+          <div className="w-[566px] h-[480px] flex  flex-col gap-6  p-8 max-sm:h-[516px] max-sm:w-[343px] max-sm:flex max-sm:justify-center max-sm:items-center">
             <div className=" text-xl text-white font-bold">Mentorhub</div>
             <div>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
@@ -102,15 +106,19 @@ export const Work = () => {
           </div>
           <div className="w-[566px] h-[480px] rounded-tr-xl rounded-br-xl bg-[#374151] pl-8 pt-8">
             <img
-              className="w-[480px] h-96 rounded-xl"
+              className="w-[480px] h-96 rounded-xl max-sm:h-48 max-sm:w-[279px]"
               src="mentorhub.png"
               alt=""
             />
           </div>
         </div>
-        <div className="w-[1132px] h-[480px] rounded-xl bg-[#1f2937] flex flex-row ">
-          <div className="w-[566px] h-[480px] rounded-tl-xl rounded-bl-xl bg-[#374151] pl-8 pt-8">
-            <img className="w-[480px] h-96 rounded-xl" src="itoim.jpg" alt="" />
+        <div className="w-[1132px] h-[480px] rounded-xl bg-[#1f2937] flex flex-row max-sm:flex max-sm:flex-col max-sm:h-[772px]">
+          <div className="w-[566px] h-[480px] rounded-tl-xl rounded-bl-xl bg-[#374151] pl-8 pt-8 max-sm:h-[516px] max-sm:w-[343px] max-sm:flex max-sm:justify-center max-sm:items-center">
+            <img
+              className="w-[480px] h-96 rounded-xl max-sm:h-48 max-sm:w-[279px]"
+              src="itoim.jpg"
+              alt=""
+            />
           </div>
           <div className="w-[566px] h-[480px] flex  flex-col gap-6  p-8">
             <div className=" text-xl text-white font-bold">iToim</div>
