@@ -1,12 +1,15 @@
 export const Hero = () => {
   return (
-    <div className="w-full h-139 flex  justify-center items-center max-sm:h-[940px] max-sm:w-[343px] max-sm:justify-center max-sm:items-center max-sm:flex">
-      <div className="w-full h-91 flex justify-center items-center px-8 gap-12 max-sm:h-[776px] max-sm:flex-col-reverse max-sm:w-[343px]">
-        <div className="w-[600]  h-[364] flex flex-col max-sm:w-[343px] max-sm:flex max-sm:justify-center max-sm:items-center max-sm:ml-[50px]">
+    <div className="w-full flex  justify-center items-center max-sm:w-[343px] max-sm:justify-center max-sm:items-center max-sm:flex">
+      <div
+        className="w-full flex justify-center items-center px-8 gap-100 pt-24 pb-24 max-sm:flex-col-reverse max-sm:w-[343px] max-sm:justify-center max-sm:items-center
+      max-sm:gap-10 "
+      >
+        <div className="w-[600]  h-[364] flex flex-col gap-4 max-sm:flex max-sm:justify-center max-sm:items-center max-sm:ml-[50px]">
           <div className="text-white text-6xl flex  font-bold max-sm:text-4xl max-sm:mr-26">
             Hi, I’m Tom 👋
           </div>
-          <div className="flex flex-col space-y-[70px] max-sm:">
+          <div className="flex flex-col space-y-[70px]">
             <p className="w-[580px] h-24 font-thin text-[16px] text-white max-sm:w-[343px] max-sm:h-24">
               I specialize in full stack development, particularly with React.js
               and Node.js. My main goal is to create exceptional digital
@@ -32,12 +35,15 @@ export const Hero = () => {
           </div>
         </div>
 
-        <div className="w-[568px] h-[364px] max-sm:w-[343px] max-sm:h-[300px]">
+        <div className="w-[280px]flex max-sm:hidden">
           <img
-            className="ml-[278px]  max-sm:ml-[100px]"
+            className="w-full h-full object-cover "
             src="tomtomi.png"
             alt=""
           />
+        </div>
+        <div className="hidden max-sm:flex">
+          <img src="mobile.png" alt="" />
         </div>
       </div>
     </div>

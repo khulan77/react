@@ -3,7 +3,6 @@ import { Hero } from "@/components/Hero";
 import { About } from "@/components/About";
 import { Skills } from "@/components/Skills";
 import { Experience } from "@/components/Experience";
-import { ExperienceData } from "@/components/ExperienceData";
 import { Work } from "@/components/Work";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
@@ -16,7 +15,6 @@ const Home = () => {
       <About />
       <Skills />
       <Experience />
-      <ExperienceData />
       <Work />
       <Contact />
       <Footer />

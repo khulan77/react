@@ -1,7 +1,14 @@
+import { Rubik_Mono_One } from "next/font/google";
+const tom = Rubik_Mono_One({ subsets: ["Latin"], weight: ["400"] });
+
 export const Header = () => {
   return (
-    <div className="flex flex-row bg-[#030712] w-full h-[68px] pt-4 pr-20 pb-4 pl-20 items-center justify-between max-sm">
-      <div className="w-19 h-9 font-bold text-[30px] text-[#F9FAFB] ">TOM</div>
+    <div className="flex flex-row bg-[#030712] w-full h-[68px] pt-4 pr-20 pb-4 pl-20 items-center justify-between max-sm:pl-4 max-sm:pr-4">
+      <div
+        className={`w-19 h-9 text-[30px] font-normal  ${tom.className} max-sm:`}
+      >
+        TOM
+      </div>
       <div className="w-[554px] h-9 gap-6 flex flex-row items-center text-[#D1D5DB] font-medium text-[16px] max-sm:hidden ">
         <div>About</div>
         <div>Work</div>
