@@ -40,9 +40,9 @@ export const Experience = () => {
         </div>
       </div>
       <div
-        className="w-[832px] bg-[#1F2937] rounded-xl p-8 flex justify-between 
+        className="w-[832px] bg-[#1F2937] rounded-xl p-8 flex justify-between
         gap-6
-        max-sm:flex-col max-sm:w-full max-sm:text-center max-sm:p-4"
+        max-sm:flex-col max-sm:w-full max-sm:p-4"
       >
         <div>
           <img src="logo-upwork.png" className="w-[120px]" />
@@ -65,7 +65,7 @@ export const Experience = () => {
       </div>
 
       <div
-        className="w-[832px] bg-[#1F2937] rounded-xl p-8 flex justify-between 
+        className="w-[832px] bg-[#1F2937] rounded-xl p-8 flex justify-between
         gap-6
         max-sm:flex-col max-sm:w-full max-sm:text-center max-sm:p-4"
       >
